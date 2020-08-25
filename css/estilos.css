@@ -1,0 +1,282 @@
+/*generales*/
+.tipografia {
+  font-family: cocogoose pro; }
+
+#tipografia {
+  font-family: cocogoose pro; }
+
+body {
+  line-height: none;
+  color: none;
+  text-align: none; }
+
+/*generales*/
+/*Media Query*/
+/*X-Large devices*/
+@media (min-width: 1200px) {
+  .fotoBanner {
+    height: auto; }
+  .lupaBuscador {
+    visibility: hidden; } }
+
+/*Large devices*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .fotoBanner {
+    width: 80%;
+    height: auto; }
+  .lupaBuscador {
+    visibility: hidden; } }
+
+/*medium devices*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .fotoBanner {
+    width: 70%;
+    height: auto; }
+  .padreFlexDatosExtra {
+    width: 90%; }
+  .btn {
+    font-size: 1.2rem; }
+  .estiloBuscador {
+    border: solid 1.5px;
+    height: 30px; }
+  .lupaBuscador {
+    visibility: hidden; }
+  .container, .container-md, .container-sm {
+    max-width: 768px; } }
+
+/*small devices*/
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .fotoBanner {
+    width: 80%;
+    height: auto; }
+  .padreFlexDatosExtra {
+    width: 90%; }
+  .btn {
+    font-size: 0.9rem; }
+  .estiloHeader {
+    width: 100%; }
+  .estiloBuscador {
+    visibility: hidden; }
+  .lupaBuscador {
+    visibility: visible; }
+  .mapa {
+    width: 600px; }
+  .datosExtra {
+    height: auto;
+    width: 80rem; }
+  #estiloInfoFooter {
+    color: white;
+    text-align: right;
+    font-size: 1rem; } }
+
+/*x-small devices*/
+@media (max-width: 576px) {
+  header {
+    width: 70%; }
+  .estiloHeader {
+    justify-content: space-around; }
+  .fotoBanner {
+    width: 80%;
+    height: auto; }
+  .padreFlexDatosExtra {
+    width: 80%; }
+  .btn {
+    font-size: 1rem; }
+  .estiloBuscador {
+    visibility: hidden; }
+  .lupaBuscador {
+    visibility: visible; }
+  .datosExtra {
+    height: auto;
+    width: 80rem; }
+  .mapa {
+    width: 300px; }
+  #estiloInfoFooter {
+    color: white;
+    text-align: right;
+    font-size: 1rem; }
+  .mapa {
+    width: 100px;
+    height: auto; } }
+
+/*Media Query*/
+/*Header*/
+.estiloLogoElBalcon {
+  width: 18.75rem;
+  margin-top: 2rem; }
+
+.estiloBuscador {
+  border: solid 1.5px;
+  width: 500px;
+  height: 30px;
+  text-align: center;
+  transition: all 1s;
+  justify-content: center;
+  margin-top: 2rem; }
+
+.estiloBuscador:hover {
+  width: 600px; }
+
+.btn-primary {
+  color: RGB(188 194 130);
+  background-color: white;
+  border-color: white; }
+
+.container header {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; }
+
+*, ::after, ::before {
+  box-sizing: content-box; }
+
+/*Header*/
+/*Nav*/
+.navbar-light .navbar-nav .nav-link {
+  font-size: 1.4rem;
+  color: #ABCFD1; }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  background-color: #ABCFD1;
+  color: white; }
+
+.navbar-expand-md .navbar-collapse {
+  justify-content: center; }
+
+.navbar-light .navbar-toggler {
+  color: #ABCFD1;
+  border-color: #ABCFD1; }
+
+/*Nav*/
+/*Grilla*/
+.inicioBanner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.btn-info {
+  border-color: #ABCFD1;
+  background-color: white;
+  color: #ABCFD1;
+  transition: color; }
+
+.btn-info:hover {
+  color: white;
+  border-color: #ABCFD1;
+  background-color: #ABCFD1; }
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color;
+  color: #E0DF78; }
+
+a:hover {
+  color: #5d7c61;
+  text-decoration: underline; }
+
+.estiloRecetas {
+  display: grid;
+  grid-template-areas: 'receta receta receta receta receta receta' 'foto foto ingredientes ingredientes none none' 'foto foto procedimiento procedimiento procedimiento procedimiento' 'foto foto procedimiento procedimiento procedimiento procedimiento' 'foto foto procedimiento procedimiento procedimiento procedimiento';
+  grid-column-gap: 7px;
+  grid-row-gap: 7px;
+  margin: 10px; }
+
+.div1 {
+  grid-area: receta;
+  justify-self: start;
+  align-self: center;
+  font-size: 25px;
+  font-style: oblique;
+  margin-left: 20px; }
+
+.div2 {
+  grid-area: foto;
+  justify-self: center; }
+
+.div3 {
+  grid-area: ingredientes;
+  justify-self: start;
+  align-self: center; }
+
+.div4 {
+  grid-area: procedimiento;
+  justify-self: start;
+  align-self: center;
+  margin-left: 30px; }
+
+.sustentabilidad {
+  display: grid;
+  grid-template-areas: 'compost zerowaste podcast' 'texto texto texto';
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  margin-top: 100px; }
+
+.compost {
+  grid-area: compost; }
+
+.zerowaste {
+  grid-area: zerowaste; }
+
+.podcast {
+  grid-area: podcast; }
+
+.imagenesSustent {
+  height: 300px; }
+
+.textoSustent {
+  grid-area: texto;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  margin-top: 20px;
+  color: black; }
+
+.datosExtra {
+  border-left: solid 2px grey;
+  height: auto;
+  width: 120rem; }
+
+.datosExtra__padre--estilo {
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  text-align: center; }
+
+/*Grilla*/
+/*Footer*/
+.estilosContacto {
+  color: #a2b4a8; }
+
+.redesSociales {
+  width: 30px;
+  height: 30px; }
+
+.footer_padre--estilo {
+  display: flex;
+  flex-direction: row wrap;
+  align-items: center;
+  font-size: 0,5rem; }
+
+.mapa {
+  width: 700px;
+  height: 250px; }
+
+#estiloInfoFooter {
+  color: white;
+  text-align: right;
+  font-size: 1.4rem; }
+
+#gradiente {
+  background-color: #6F8687; }
+
+h1 {
+  font-size: 1,5rem; }
+
+/*Footer*/

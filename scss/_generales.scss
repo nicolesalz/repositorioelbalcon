@@ -1,0 +1,172 @@
+/*generales*/
+.tipografia{
+	font-family: cocogoose pro; 
+}
+
+#tipografia{
+	font-family: cocogoose pro;
+}
+
+
+body{
+	line-height: none;
+	color: none;
+	text-align: none;
+}
+/*generales*/
+
+
+/*Media Query*/
+/*X-Large devices*/
+@media (min-width:1200px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl{
+    
+	}
+
+	.fotoBanner{
+		height:auto;
+	}
+
+	.lupaBuscador{
+		visibility: hidden;
+	}
+}
+
+/*Large devices*/
+@media screen and (min-width: 992px) and (max-width: 1200px){
+	.fotoBanner{	
+		width:80%;
+		height: auto;
+	}
+
+	.lupaBuscador{
+		visibility: hidden;
+	}
+}	
+
+/*medium devices*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+	.fotoBanner{
+		width: 70%;
+		height: auto;
+	}
+
+	.padreFlexDatosExtra{
+		width: 90%;
+	}
+
+	.btn{
+		font-size: 1.2rem;
+	}
+
+	.estiloBuscador{
+	border: solid 1.5px;
+	height: 30px;
+	}
+
+	.lupaBuscador{
+		visibility: hidden;
+	}
+
+	.container, .container-md, .container-sm {
+    max-width: 768px;
+}
+}
+
+/*small devices*/
+@media screen and (min-width: 576px) and (max-width: 768px){
+	.fotoBanner{
+		width: 80%;
+		height: auto;
+	}
+
+	.padreFlexDatosExtra{
+		width: 90%;
+	}
+
+	.btn{
+		font-size: 0.9rem;
+	}
+	.estiloHeader{
+		width: 100%
+	}
+	.estiloBuscador{
+		visibility: hidden;
+	}
+
+	.lupaBuscador{
+		visibility: visible;
+	}
+
+	.mapa{
+		width: 600px;
+	}
+
+	.datosExtra{
+		height: auto;
+		width: 80rem;
+	}
+
+	#estiloInfoFooter {
+    color: white;
+    text-align: right;
+    font-size: 1rem;
+	}
+}
+
+
+
+/*x-small devices*/
+@media (max-width: 576px){
+	header{
+		width: 70%;
+	}
+
+	.estiloHeader{
+		justify-content: space-around;
+	}
+
+	.fotoBanner{
+		width: 80%;
+		height: auto;
+	}
+
+	.padreFlexDatosExtra{
+		width: 80%;
+	}
+
+	.btn{
+		font-size: 1rem;
+	}
+
+	.estiloBuscador{
+		visibility: hidden;
+	}
+
+	.lupaBuscador{
+		visibility: visible;
+	}
+
+	.datosExtra{
+		height: auto;
+		width: 80rem;
+	}
+
+	.mapa{
+		width: 300px;
+	}
+
+	#estiloInfoFooter {
+    color: white;
+    text-align: right;
+    font-size: 1rem;
+	}
+
+	.mapa{
+	width: 100px;
+	height: auto;
+}
+
+}
+/*Media Query*/
+

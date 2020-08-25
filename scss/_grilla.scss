@@ -1,0 +1,126 @@
+/*Grilla*/
+$color-botones: #ABCFD1;
+
+.inicioBanner{
+	display: flex;
+	flex-direction:column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.btn-info{
+	border-color: $color-botones;
+	background-color: white;
+	color: $color-botones;
+	transition: color;
+}
+
+.btn-info:hover{
+	color:white;
+	border-color: $color-botones;
+	background-color: $color-botones;
+}
+
+a {
+	text-decoration: none;
+	color:black;
+	transition: color;
+	color: #E0DF78;
+}
+
+a:hover{
+	color:#5d7c61; 
+	text-decoration: underline;
+}
+
+.estiloRecetas{
+	display: grid;
+	grid-template-areas: 
+	'receta receta receta receta receta receta'
+	'foto foto ingredientes ingredientes none none'
+	'foto foto procedimiento procedimiento procedimiento procedimiento'
+	'foto foto procedimiento procedimiento procedimiento procedimiento'
+	'foto foto procedimiento procedimiento procedimiento procedimiento';
+	grid-column-gap: 7px;
+	grid-row-gap: 7px;
+	margin:10px;
+}
+
+.div1 {
+  grid-area: receta;
+  justify-self: start; 
+  align-self:center;
+  font-size: 25px;
+  font-style: oblique;
+  margin-left:20px;
+}
+
+.div2 {
+  grid-area: foto;
+  justify-self: center; 
+}
+
+.div3 {
+  grid-area: ingredientes;
+  justify-self: start; 
+  align-self:center;
+}
+
+.div4 {
+  grid-area: procedimiento;
+  justify-self: start; 
+  align-self:center;
+  margin-left:30px;
+}
+
+.sustentabilidad {
+display: grid;
+grid-template-areas:
+'compost zerowaste podcast'
+'texto texto texto';
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+justify-items:center;
+margin-top:100px;
+}
+
+.compost {
+	grid-area: compost;
+}
+
+.zerowaste { 
+	grid-area: zerowaste;
+}
+
+.podcast { 
+	grid-area: podcast; 
+}
+
+.imagenesSustent{
+	height: 300px;
+}
+
+.textoSustent{
+	grid-area:texto;
+	justify-self:center;
+	align-self:center;
+	text-align:center;
+	margin-top:20px;
+	color:black;
+}
+
+.datosExtra{
+	border-left:solid 2px grey;	
+	height: auto;
+	width: 120rem;
+}
+
+.datosExtra__padre--estilo{
+	display: flex;
+	flex-direction: row nowrap;
+	justify-content: center;
+	text-align: center;
+}
+/*Grilla*/

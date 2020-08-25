@@ -1,0 +1,22 @@
+/*Nav*/
+$colores-nav: #ABCFD1;
+
+.navbar-light .navbar-nav .nav-link{
+	font-size: 1.4rem;
+	color: $colores-nav;
+}	
+
+.navbar-light .navbar-nav .nav-link:hover{
+	background-color: $colores-nav;
+	color:white;
+}
+
+.navbar-expand-md .navbar-collapse{
+	justify-content:center;
+}
+
+.navbar-light .navbar-toggler{
+	color: $colores-nav;
+	border-color: $colores-nav;
+}
+/*Nav*/
