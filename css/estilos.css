@@ -252,7 +252,7 @@ a:hover {
 /*Grilla*/
 /*Footer*/
 
-section {
+.footerElFinal {
   width: 100%;
   display: inline-block;
   background: #DEA097;
