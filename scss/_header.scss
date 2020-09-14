@@ -1,0 +1,41 @@
+/*Header*/
+.estiloLogoElBalcon{
+	width: 18.75rem;
+	margin-top: 2rem;
+}
+
+.estiloBuscador{
+	border: solid 1.5px;
+	width: 500px;
+	height: 30px;
+	text-align: center;
+	transition: all 1s;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+.estiloBuscador:hover{
+	width: 600px;
+}
+
+
+.btn-primary{
+	color: RGB(188 194 130);
+	background-color: white;
+	border-color:white;
+}
+
+
+.container header {
+	font-size: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+*, ::after, ::before {
+    box-sizing: content-box;
+}
+
+/*Header*/
