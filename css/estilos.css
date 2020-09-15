@@ -41,10 +41,10 @@ body {
     height: 30px; }
   .lupaBuscador {
     visibility: hidden; }
+   .imagenesSustent {
+    height: 200px; }
   .container, .container-md, .container-sm {
-    max-width: 768px; } 
-  .imagenesSustent {
-    height: 200px; } }
+    max-width: 768px; } }
 
 /*small devices*/
 @media screen and (min-width: 576px) and (max-width: 768px) {
