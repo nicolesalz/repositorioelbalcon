@@ -103,19 +103,6 @@ body {
     width: 250%;
     margin-top: 2rem;} }
   
-  .estiloRecetas {
-    display: grid;
-    grid-template-areas:
-        'receta receta'
-        'foto foto'
-        'foto foto'
-        'foto foto'
-        'ingredientes none'
-        'ingredientes none'
-        'procedimiento procedimiento'
-        'procedimiento procedimiento'
-        'procedimiento procedimiento', }
-
 /*Media Query*/
 /*Caja Shop*/
 .cajashop {
@@ -221,36 +208,28 @@ a:hover {
 
 .estiloRecetas {
   display: grid;
-  grid-template-areas: 'receta receta receta receta receta receta' 'foto foto ingredientes ingredientes none none' 'foto foto procedimiento procedimiento procedimiento procedimiento' 'foto foto procedimiento procedimiento procedimiento procedimiento' 'foto foto procedimiento procedimiento procedimiento procedimiento';
-  grid-column-gap: 7px;
-  grid-row-gap: 7px;
-  margin: 10px; }
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 3px 1px;
+  grid-template-areas:
+    "receta receta"
+    "foto foto"
+    "foto foto"
+    "foto foto"
+    "ingredientes ingredientes"
+    "ingredientes ingredientes"
+    "procedimiento procedimiento"
+    "procedimiento procedimiento"
+    "procedimiento procedimiento";
+}
 
-.div1 {
-  grid-area: receta;
-  justify-self: start;
-  align-self: right;
-  font-size: 25px;
-  font-style: oblique;
-  margin-left: 20px;
-  text-align: left; }
+.receta { grid-area: receta; }
 
-.div2 {
-  grid-area: foto;
-  justify-self: center; }
+.foto { grid-area: foto; }
 
-.div3 {
-  grid-area: ingredientes;
-  justify-self: right;
-  align-self: right;
-  text-align: left; }
+.ingredientes { grid-area: ingredientes; }
 
-.div4 {
-  grid-area: procedimiento;
-  justify-self: right;
-  align-self: right;
-  margin-left: 30px;
-  text-align: left; }
+.procedimiento { grid-area: procedimiento; }
 
 .sustentabilidad {
   display: grid;
