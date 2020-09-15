@@ -102,6 +102,19 @@ body {
   .estiloLogoElBalcon {
     width: 250%;
     margin-top: 2rem;} }
+  
+  .estiloRecetas {
+    display: grid;
+    grid-template-areas:
+        'receta receta'
+        'foto foto'
+        'foto foto'
+        'foto foto'
+        'ingredientes none'
+        'ingredientes none'
+        'procedimiento procedimiento'
+        'procedimiento procedimiento'
+        'procedimiento procedimiento', }
 
 /*Media Query*/
 /*Caja Shop*/
