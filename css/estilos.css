@@ -223,13 +223,25 @@ a:hover {
     "procedimiento procedimiento";
 }
 
-.receta { grid-area: receta; }
+.receta { 
+  grid-area: receta;
+  font-size: 25px;
+  text-align: center;
+}
 
-.foto { grid-area: foto; }
+.foto { 
+  grid-area: foto; 
+}
 
-.ingredientes { grid-area: ingredientes; }
+.ingredientes { 
+  grid-area: ingredientes; 
+  text-align: center;
+}
 
-.procedimiento { grid-area: procedimiento; }
+.procedimiento { 
+  grid-area: procedimiento; 
+  text-align: center;
+}
 
 .sustentabilidad {
   display: grid;
